@@ -1,0 +1,23 @@
+To calculate the distance between two points on the Moon using latitude and longitude, you can adapt the Haversine formula or use spherical geometry. This method is based on a spherical approximation of the Moon's surface.
+Steps to calculate the distance:
+
+    Assume a spherical Moon: The average radius of the Moon is approximately 1,737.4 km.
+    Use the Haversine formula: This formula computes the great-circle distance between two points on a sphere from their longitudes and latitudes.
+
+Haversine Formula:
+a=sin⁡2(Δϕ2)+cos⁡(ϕ1)⋅cos⁡(ϕ2)⋅sin⁡2(Δλ2)
+a=sin2(2Δϕ​)+cos(ϕ1​)⋅cos(ϕ2​)⋅sin2(2Δλ​)
+c=2⋅atan2(a,1−a)
+c=2⋅atan2(a
+​,1−a
+​)
+d=R⋅c
+d=R⋅c
+
+Where:
+
+    ϕ1,ϕ2ϕ1​,ϕ2​ are the latitudes of the two points in radians.
+    ΔϕΔϕ is the difference between the latitudes.
+    ΔλΔλ is the difference between the longitudes in radians.
+    RR is the Moon's radius (1,737.4 km).
+    dd is the distance between the two points.
